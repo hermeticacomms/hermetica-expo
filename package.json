@@ -1,0 +1,31 @@
+{
+  "name": "@hermeticacomms/sdk-expo",
+  "version": "0.1.0",
+  "description": "Expo config plugin for Hermetica: push entitlements and permissions, site key in app config",
+  "license": "MIT",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hermeticacomms/hermetica-expo.git"
+  },
+  "homepage": "https://github.com/hermeticacomms/hermetica-expo#readme",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "main": "./dist/plugin.js",
+  "types": "./dist/plugin.d.ts",
+  "files": [
+    "dist",
+    "app.plugin.js"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}
