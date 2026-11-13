@@ -1,5 +1,5 @@
 /**
- * Expo config plugin for Hermetica: sets the native config push (and optionally geofencing) need at `expo prebuild`, and puts the
+ * Expo config plugin for Hermeticor: sets the native config push (and optionally geofencing) need at `expo prebuild`, and puts the
  * site key and endpoint in `extra.hermetica` for the app to read. It edits only the app config fields Expo already applies
  * (`ios.entitlements`, `ios.infoPlist`, `android.permissions`, `extra`), so it needs no dependency on @expo/config-plugins.
  * The runtime SDK is @hermetica/sdk-react-native.

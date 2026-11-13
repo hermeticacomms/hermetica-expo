@@ -1,6 +1,6 @@
 # @hermeticacomms/sdk-expo
 
-Expo config plugin for Hermetica. At `expo prebuild` it sets what push needs natively (the `aps-environment` entitlement,
+Expo config plugin for Hermeticor. At `expo prebuild` it sets what push needs natively (the `aps-environment` entitlement,
 background remote notifications, Android 13's `POST_NOTIFICATIONS`), optionally the geofencing permissions, and stores the site
 key and endpoint in `extra.hermetica`. The runtime SDK is `@hermeticacomms/sdk-react-native`.
 
