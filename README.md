@@ -1,14 +1,14 @@
-# @hermeticacomms/sdk-expo
+# @hermeticor/sdk-expo
 
 Expo config plugin for Hermeticor. At `expo prebuild` it sets what push needs natively (the `aps-environment` entitlement,
 background remote notifications, Android 13's `POST_NOTIFICATIONS`), optionally the geofencing permissions, and stores the site
-key and endpoint in `extra.hermetica`. The runtime SDK is `@hermeticacomms/sdk-react-native`.
+key and endpoint in `extra.hermetica`. The runtime SDK is `@hermeticor/sdk-react-native`.
 
 ```json
 {
   "expo": {
     "plugins": [
-      ["@hermeticacomms/sdk-expo", { "siteKey": "hm_pk_...", "endpoint": "https://api.example.com", "apsEnvironment": "production" }]
+      ["@hermeticor/sdk-expo", { "siteKey": "hm_pk_...", "endpoint": "https://api.example.com", "apsEnvironment": "production" }]
     ]
   }
 }
@@ -18,7 +18,7 @@ key and endpoint in `extra.hermetica`. The runtime SDK is `@hermeticacomms/sdk-r
 import Constants from 'expo-constants';
 import * as Notifications from 'expo-notifications';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { createReactNativeClient } from '@hermeticacomms/sdk-react-native';
+import { createReactNativeClient } from '@hermeticor/sdk-react-native';
 
 const { siteKey, endpoint } = Constants.expoConfig!.extra!.hermetica;
 const hm = await createReactNativeClient({ siteKey, endpoint, storage: AsyncStorage, platform: Platform.OS === 'ios' ? 'ios' : 'android' });
