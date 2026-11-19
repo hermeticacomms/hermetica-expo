@@ -1,7 +1,7 @@
 {
   "name": "@hermeticor/sdk-expo",
-  "version": "0.4.6",
-  "description": "Expo config plugin for Hermetica: push entitlements and permissions, site key in app config",
+  "version": "0.4.9",
+  "description": "Expo config plugin for Hermetica: push entitlements and permissions, site key in app config, Expo push token registration",
   "license": "MIT",
   "type": "commonjs",
   "repository": {
@@ -31,6 +31,14 @@
     "build": "tsc -p tsconfig.json",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "peerDependencies": {
+    "expo-notifications": ">=0.20"
+  },
+  "peerDependenciesMeta": {
+    "expo-notifications": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "typescript": "^7.0.2",

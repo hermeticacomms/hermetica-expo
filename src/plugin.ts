@@ -49,3 +49,5 @@ export default function withHermetica(config: ExpoConfig, props: HermeticaPlugin
   const hermetica = { ...(props.siteKey ? { siteKey: props.siteKey } : {}), ...(props.endpoint ? { endpoint: props.endpoint } : {}) };
   return { ...config, ios, android, extra: { ...config.extra, hermetica: { ...(config.extra?.['hermetica'] as Dict | undefined), ...hermetica } } };
 }
+
+export { registerExpoPushToken, type ExpoNotificationsModule, type PushTokenClient, type RegisterExpoPushTokenOptions } from './push.ts';
