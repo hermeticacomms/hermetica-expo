@@ -1,6 +1,6 @@
 {
   "name": "@hermeticor/sdk-expo",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "description": "Expo config plugin for Hermetica: push entitlements and permissions, site key in app config",
   "license": "MIT",
   "type": "commonjs",
